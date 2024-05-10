@@ -450,7 +450,6 @@ public class MainViewModel extends AndroidViewModel implements ListOptions.ListO
                     }
                     // Filter rests
                     if ((mFilterFlags & MainListOptions.FILTER_FROZEN_APPS) != 0 && !item.isDisabled) {
-                        Log.e("GGGGGGGG", "package: " + item.packageName);
                         continue;
                     } else if ((mFilterFlags & MainListOptions.FILTER_APPS_WITH_RULES) != 0 && item.blockedCount <= 0) {
                         continue;
